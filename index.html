@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Práctica 5.1 - Indexar página web en Google</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f7f7f7;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    h2 {
+      color: #2980b9;
+    }
+    code {
+      background-color: #eaeaea;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+    }
+    .step {
+      background-color: #ffffff;
+      padding: 15px;
+      border-left: 4px solid #3498db;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Práctica 5.1: Indexar una página web en Google</h1>
+
+  <div class="step">
+    <h2>Paso 1: Crear tu sitio web</h2>
+    <p>Crea una carpeta con archivos como <code>index.html</code> y <code>styles.css</code>. Asegúrate de que todo funcione correctamente en tu navegador.</p>
+  </div>
+
+  <div class="step">
+    <h2>Paso 2: Subir tu sitio a Internet</h2>
+    <p>Ve a <a href="https://app.netlify.com/drop" target="_blank">Netlify Drop</a> y arrastra tu carpeta comprimida (.zip). Se generará una URL como:</p>
+    <code>https://mi-sitio.netlify.app</code>
+  </div>
+
+  <div class="step">
+    <h2>Paso 3: Agregar tu sitio a Google Search Console</h2>
+    <p>Ingresa a <a href="https://search.google.com/search-console" target="_blank">Google Search Console</a> y añade tu URL usando la opción "Prefijo de URL".</p>
+  </div>
+
+  <div class="step">
+    <h2>Paso 4: Verificación</h2>
+    <p>Selecciona la opción "Etiqueta HTML" y copia el código que te da Google:</p>
+    <code>&lt;meta name="google-site-verification" content="TU_CODIGO" /&gt;</code>
+    <p>Pega esta línea dentro de la etiqueta <code>&lt;head&gt;</code> de tu archivo <code>index.html</code>.</p>
+  </div>
+
+  <div class="step">
+    <h2>Paso 5: Volver a subir el sitio a Netlify</h2>
+    <p>Después de guardar los cambios, vuelve a subir tu carpeta comprimida a <a href="https://app.netlify.com/drop" target="_blank">Netlify</a>.</p>
+  </div>
+
+  <div class="step">
+    <h2>Paso 6: Verificar y solicitar indexación</h2>
+    <p>En Google Search Console, haz clic en "Verificar". Luego, inspecciona tu URL y haz clic en "Solicitar indexación".</p>
+  </div>
+
+  <p>✅ ¡Listo! Tu sitio ahora está en línea y será indexado por Google.</p>
+</body>
+</html>
